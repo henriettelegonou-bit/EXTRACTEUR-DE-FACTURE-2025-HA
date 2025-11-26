@@ -42,7 +42,7 @@ if uploaded_file:
             st.error("Aucun texte détecté / No text detected")
         else:
             st.subheader("Texte extrait / Extracted text")
-            st.text("
+st.text("\n".join(result))
 ".join(result))
 
             # Export Excel enrichi
